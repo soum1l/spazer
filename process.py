@@ -63,7 +63,7 @@ for x in range(10):
         ### Token is a valid address/e-mail/telephone-number #############
 
 	#Load database of Indian Cities and Villages
-        fb = open('data/Localities.txt', 'r', errors="ignore")
+        fb = open('data/Localities.min.txt', 'r', errors="ignore")
         localities = fb.read().strip().split('\n')
         fb.close()
 
