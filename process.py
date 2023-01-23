@@ -90,7 +90,7 @@ for x in range(10):
                             tag['class'] = '@'
                             for sibling in tag.find_previous_siblings()[:safeness]:
                                 sibling['class'] = '@'
-                            for sibling in tag.find_next_siblings()[:(safeness*3)//4]:
+                            for sibling in tag.find_next_siblings()[:int(safeness*0.75)]:
                                 sibling['class'] = '@'
                             matched = True
                             break
