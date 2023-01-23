@@ -71,24 +71,24 @@ for x in range(10):
         import re
         from bisect import bisect
         import sys
-        aggression = int(sys.argv[1]) if len(sys.argv) > 1 else 5
+        preserve = int(sys.argv[1]) if len(sys.argv) > 1 else 5
         for tag in soup.find_all():
             for chunk in tag.find_all(string=True, recursive=False):
                 chunk = re.sub('[^A-Za-z0-9]+', ' ', chunk).lower().split()
                 for i in range(len(chunk)):
-                    is_address = False
+                    matched = False
                     for j in range(len(chunk)-i):
                         token = ' '.join(chunk[j:j+i+1])
                         index = bisect(localities, token)
-                        if index != len(localities) and localities[index-1] == token:
+                        if index < len(localities) and localities[index-1] == token:
                             tag['class'] = '@'
-                            for sibling in tag.find_previous_siblings()[:aggression]:
+                            for sibling in tag.find_previous_siblings()[:preserve]:
                                 sibling['class'] = '@'
-                            for sibling in tag.find_next_siblings()[:(aggression*3)//4]:
+                            for sibling in tag.find_next_siblings()[:(preserve*3)//4]:
                                 sibling['class'] = '@'
                             matched = True
                             break
-                    if is_address: break
+                    if matched: break
 
         #Delete unmarked Leaves
         for tag in soup.find_all():
