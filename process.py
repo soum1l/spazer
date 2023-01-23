@@ -53,6 +53,13 @@ for x in range(10):
             if len(tag.find_all(recursive=False)) == 1:
                 tag.unwrap()
 
+	#Wrap naked text in divs
+        for tag in soup.find_all():
+            if len(tag.find_all(recursive=False)) > 0:
+                for chunk in tag.find_all(string=True, recursive=False):
+                    if len(chunk.strip()) > 0:
+                        chunk.wrap(soup.new_tag('div'))
+
         #Annhiliate class attribute
         for tag in soup.find_all():
             tag['class'] = None
@@ -70,8 +77,7 @@ for x in range(10):
         #Mark chunks (and its siblings) containing Indian addresses
         import re
         from bisect import bisect
-        import sys
-        preserve = int(sys.argv[1]) if len(sys.argv) > 1 else 5
+        safeness = 5
         for tag in soup.find_all():
             for chunk in tag.find_all(string=True, recursive=False):
                 chunk = re.sub('[^A-Za-z0-9]+', ' ', chunk).lower().split()
@@ -82,9 +88,9 @@ for x in range(10):
                         index = bisect(localities, token)
                         if index < len(localities) and localities[index-1] == token:
                             tag['class'] = '@'
-                            for sibling in tag.find_previous_siblings()[:preserve]:
+                            for sibling in tag.find_previous_siblings()[:safeness]:
                                 sibling['class'] = '@'
-                            for sibling in tag.find_next_siblings()[:(preserve*3)//4]:
+                            for sibling in tag.find_next_siblings()[:(safeness*3)//4]:
                                 sibling['class'] = '@'
                             matched = True
                             break
@@ -97,7 +103,7 @@ for x in range(10):
             if tag['class'] is None:
                 _ = tag.extract()
 
-        ### TODO: Postprocessing of HTML Tree resultant string ###########
+        ### Editing resultant string [Postprocessing] ####################
 
         #Strip spaces and remove excessive newlines
         output = soup.get_text().strip()
