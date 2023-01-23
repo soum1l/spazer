@@ -76,7 +76,7 @@ for x in range(10):
 
         #Mark chunks (and its siblings) containing Indian addresses
         import re
-        from bisect import bisect
+        from bisect import bisect_left as bisect
         safeness = 5
         for tag in soup.find_all():
             for chunk in tag.find_all(string=True, recursive=False):
@@ -86,7 +86,7 @@ for x in range(10):
                     for j in range(len(chunk)-i):
                         token = ' '.join(chunk[j:j+i+1])
                         index = bisect(localities, token)
-                        if index < len(localities) and localities[index-1] == token:
+                        if index != len(localities) and localities[index] == token:
                             tag['class'] = '@'
                             for sibling in tag.find_previous_siblings()[:safeness]:
                                 sibling['class'] = '@'
