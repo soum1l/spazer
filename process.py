@@ -53,7 +53,7 @@ for x in range(10):
             if len(tag.find_all(recursive=False)) == 1:
                 tag.unwrap()
 
-	#Wrap naked text in divs
+        #Wrap naked text in divs
         for tag in soup.find_all():
             if len(tag.find_all(recursive=False)) > 0:
                 for chunk in tag.find_all(string=True, recursive=False):
@@ -77,7 +77,7 @@ for x in range(10):
         #Mark chunks (and its siblings) containing Indian addresses
         import re
         from bisect import bisect_left as bisect
-        safeness = 5
+        safeness = 7
         for tag in soup.find_all():
             for chunk in tag.find_all(string=True, recursive=False):
                 chunk = re.sub('[^A-Za-z0-9]+', ' ', chunk).lower().split()
