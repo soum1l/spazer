@@ -69,7 +69,7 @@ for x in range(10):
         ### Process further, under the assumption that every #############
         ### Token is a valid address/e-mail/telephone-number #############
 
-	#Load database of Indian Cities and Villages
+    	#Load database of Indian Cities and Villages
         fb = open('data/Localities.min.txt', 'r', errors="ignore")
         localities = fb.read().strip().split('\n')
         fb.close()
@@ -77,7 +77,7 @@ for x in range(10):
         #Mark chunks (and its siblings) containing Indian addresses
         import re
         from bisect import bisect_left as bisect
-        safeness = 7
+        wc_thres = 30
         for tag in soup.find_all():
             for chunk in tag.find_all(string=True, recursive=False):
                 chunk = re.sub('[^A-Za-z0-9]+', ' ', chunk).lower().split()
@@ -86,12 +86,22 @@ for x in range(10):
                     for j in range(len(chunk)-i):
                         token = ' '.join(chunk[j:j+i+1])
                         index = bisect(localities, token)
-                        if index != len(localities) and localities[index] == token:
+                        if (
+                                index != len(localities) and localities[index] == token
+                             or re.match('^\d{6}$', token) is True
+                           ):
                             tag['class'] = '@'
-                            for sibling in tag.find_previous_siblings()[:safeness]:
+                            u_siblings = tag.find_previous_siblings()
+                            l_siblings = tag.find_next_siblings()
+                            siblings = [item for sublist in zip(u_siblings, l_siblings) for item in sublist]
+                            siblings += u_siblings[len(l_siblings):] + l_siblings[len(u_siblings):]
+                            wc = len(chunk)
+                            for sibling in siblings:
+                                if wc > wc_thres: break
+                                s_chunk = ' '.join(sibling.find_all(string=True, recursive=False))
+                                s_chunk = re.sub('[^A-Za-z0-9]+', ' ', s_chunk).strip().split()
                                 sibling['class'] = '@'
-                            for sibling in tag.find_next_siblings()[:int(safeness*0.75)]:
-                                sibling['class'] = '@'
+                                wc += len(s_chunk)
                             matched = True
                             break
                     if matched: break
@@ -108,7 +118,6 @@ for x in range(10):
         #Strip spaces and remove excessive newlines
         output = soup.get_text().strip()
         output = re.sub('\n{2,}', '\n\n', output)
-
         #Your code ends  #################################
 
         #Write the output variable contents to output/ folder.
