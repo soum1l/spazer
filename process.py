@@ -87,8 +87,8 @@ for x in range(10):
                         token = ' '.join(chunk[j:j+i+1])
                         index = bisect(localities, token)
                         if (
-                                index != len(localities) and localities[index] == token
-                             or re.match('^\d{6}$', token) is True
+                                (index != len(localities) and localities[index] == token)
+                             or (re.match('^\d{6}$', token))
                            ):
                             tag['class'] = '@'
                             u_siblings = tag.find_previous_siblings()
