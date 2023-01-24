@@ -103,7 +103,7 @@ for x in range(10):
             if tag['class'] is None:
                 _ = tag.extract()
 
-        ### Editing resultant string [Postprocessing] ####################
+        ### Editing resultant string [POSTPROCESSING] ####################
 
         #Strip spaces and remove excessive newlines
         output = soup.get_text().strip()
