@@ -8,7 +8,7 @@ Preprocessing steps (in order):
 - HTML tags that cannot contain text, along with comments, are deleted.
 - Tags with no text underneath them are deleted.
 - Tags which provide no additional structural information, i.e. tags with a single non textual child, are replaced by its only child.
-- To homogenize the structure of the Tree, we wrap any naked text, i.e. text with at least one sibling that is a HTML tag, is wrapped inside a <div>...</div>.
+- To homogenize the structure of the Tree, we wrap any naked text, i.e. text with at least one sibling that is a HTML tag, is wrapped inside a ```html<div>...</div>```.
 
 Since the above operations were performed in a top to bottom fashion, the resultant HTML tree will possess the following properties:
 
@@ -29,7 +29,7 @@ The steps are outlined below:
 1. Clear out the class attribute of every tag. This will be used to mark the desirable tags.
 2. Iterate over the nodes whose children are leaves, and match each n-gram obtained from the strings under the node with an external database consisting of Indian Localities, and if not matched, with a RegEx for zipcode.
 3. If a match is obtained, mark the tag with a '@'.
-4. Start marking the tags around the matched tag until we run out of tags, or hit the total word count threshold.
+4. Start marking the tags around the matched tag with a '@'  until we run out of tags, or hit the total word count threshold.
 4. Delete the leaves whose parent was not marked in the final step.
 
 Postprocessing steps:
