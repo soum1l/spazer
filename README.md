@@ -8,7 +8,7 @@ Preprocessing steps (in order):
 - HTML tags that cannot contain text, along with comments, are deleted.
 - Tags with no text underneath them are deleted.
 - Tags which provide no additional structural information, i.e. tags with a single non textual child, are replaced by its only child.
-- To homogenize the structure of the Tree, we wrap any naked text, i.e. text with at least one sibling that is a HTML tag, is wrapped inside a ```html<div>...</div>```.
+- To homogenize the structure of the Tree, we wrap any naked text, i.e. text with at least one sibling that is a HTML tag, is wrapped inside a ```<div>...</div>```.
 
 Since the above operations were performed in a top to bottom fashion, the resultant HTML tree will possess the following properties:
 
