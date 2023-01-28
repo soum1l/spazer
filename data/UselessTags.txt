@@ -1,3 +1,4 @@
+a
 area
 audio
 base
@@ -10,9 +11,10 @@ link
 map
 meta
 progress
-style
 script
+select
 source
+style
 svg
 title
 track

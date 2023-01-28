@@ -60,10 +60,6 @@ for x in range(10):
                     if len(chunk.strip()) > 0:
                         chunk.wrap(soup.new_tag('div'))
 
-        #Annhiliate class attribute
-        for tag in soup.find_all():
-            tag['class'] = None
-
         ### Each Leaf is a Token (guaranteed to be non-empty text!) ######
 
         ### Process further, under the assumption that every #############
@@ -74,10 +70,14 @@ for x in range(10):
         localities = fb.read().strip().split('\n')
         fb.close()
 
+        #Empty out class attribute
+        for tag in soup.find_all():
+            tag['class'] = None
+
         #Mark chunks (and its siblings) containing Indian addresses
         import re
         from bisect import bisect_left as bisect
-        wc_thres = 30
+        wc_thres = 70
         for tag in soup.find_all():
             for chunk in tag.find_all(string=True, recursive=False):
                 chunk = re.sub('[^A-Za-z0-9]+', ' ', chunk).lower().split()
@@ -86,26 +86,29 @@ for x in range(10):
                     for j in range(len(chunk)-i):
                         token = ' '.join(chunk[j:j+i+1])
                         index = bisect(localities, token)
-                        if (
+                        if (    # locality in database
                                 (index != len(localities) and localities[index] == token)
+                                # zip code
                              or (re.match('^\d{6}$', token))
                            ):
                             tag['class'] = '@'
-                            u_siblings = tag.find_previous_siblings()
-                            l_siblings = tag.find_next_siblings()
-                            siblings = [item for sublist in zip(u_siblings, l_siblings) for item in sublist]
-                            siblings += u_siblings[len(l_siblings):] + l_siblings[len(u_siblings):]
+                            #Get surrounding tags under parent node
+                            u_lines = list(filter(lambda t: t in tag.parent.find_all(), tag.find_all_previous()))
+                            l_lines = list(filter(lambda t: t in tag.parent.find_all(), tag.find_all_next()))
+                            #Traverse in a spiral fashion
+                            lines = [item for sublist in zip(u_lines, l_lines) for item in sublist]
+                            lines += u_lines[len(l_lines):] + l_lines[len(u_lines):]
                             wc = len(chunk)
-                            for sibling in siblings:
+                            for line in lines:
                                 if wc > wc_thres: break
-                                s_chunk = ' '.join(sibling.find_all(string=True, recursive=False))
-                                s_chunk = re.sub('[^A-Za-z0-9]+', ' ', s_chunk).strip().split()
-                                sibling['class'] = '@'
-                                wc += len(s_chunk)
+                                line_chunk = ' '.join(line.find_all(string=True, recursive=False))
+                                line_chunk = re.sub('[^A-Za-z0-9]+', ' ', line_chunk).strip().split()
+                                line['class'] = '@'
+                                wc += len(line_chunk)
                             matched = True
                             break
                     if matched: break
-
+        
         #Delete unmarked Leaves
         for tag in soup.find_all():
             if len(tag.find_all(recursive=False)) != 0:
@@ -117,7 +120,7 @@ for x in range(10):
 
         #Strip spaces and remove excessive newlines
         output = soup.get_text().strip()
-        output = re.sub('\n{2,}', '\n\n', output)
+        output = re.sub('\n[\n ]?\n', '\n\n', output)
         #Your code ends  #################################
 
         #Write the output variable contents to output/ folder.
