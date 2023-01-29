@@ -48,8 +48,8 @@ for x in range(10):
             if len(tag.get_text(strip=True)) == 0:
                 _ = tag.extract()
 
-        #Remove superfluous tags
-        for tag in soup.find_all():
+        #Remove superfluous tags (Preserve root)
+        for tag in soup.find_all()[1:]:
             if len(tag.find_all(recursive=False)) == 1:
                 tag.unwrap()
 
@@ -108,7 +108,7 @@ for x in range(10):
                             matched = True
                             break
                     if matched: break
-        
+
         #Delete unmarked Leaves
         for tag in soup.find_all():
             if len(tag.find_all(recursive=False)) != 0:
@@ -120,7 +120,8 @@ for x in range(10):
 
         #Strip spaces and remove excessive newlines
         output = soup.get_text().strip()
-        output = re.sub('\n[\n ]?\n', '\n\n', output)
+        output = re.sub('\s{2,}', ' ', output)
+        output = re.sub('[\n\t]?', '', output)
         #Your code ends  #################################
 
         #Write the output variable contents to output/ folder.

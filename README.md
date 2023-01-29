@@ -30,7 +30,7 @@ The steps are outlined below:
 2. Iterate over the nodes whose children are leaves, and match each n-gram obtained from the strings under the node with an external database consisting of Indian Localities, and if not matched, with a RegEx for zipcode.
 3. If a match is obtained, mark the tag with a '@'.
 4. Start marking the tags around the matched tag with a '@'  until we run out of tags, or hit the total word count threshold.
-4. Delete the leaves whose parent was not marked in the final step.
+5. Delete the leaves whose parent was not marked in the final step.
 
 Postprocessing steps:
 
