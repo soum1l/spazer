@@ -1,3 +1,4 @@
+abu
 achalpur
 achhnera
 adalaj
@@ -9,6 +10,9 @@ adra
 adyar
 afzalpur
 agartala
+agglomeration
+agglomerationr
+agglomerationzi
 agra
 ahmedabad
 ahmednagar
@@ -18,9 +22,10 @@ akola
 akot
 alappuzha
 aligarh
-alipurdurban agglomerationr
+alipurdurban
 alirajpur
 allahabad
+allinagaram
 alwar
 amalapuram
 amalner
@@ -34,8 +39,9 @@ anakapalle
 anand
 anantapur
 anantnag
-andaman and nicobar islands
-andhra pradesh
+and
+andaman
+andhra
 anjangaon
 anjar
 ankleshwar
@@ -44,13 +50,13 @@ arambagh
 araria
 arrah
 arsikere
-arunachal pradesh
+arunachal
 aruppukkottai
 arvi
 arwal
 asansol
 asarganj
-ashok nagar
+ashok
 assam
 athni
 attingal
@@ -63,29 +69,33 @@ baharampur
 bahraich
 balaghat
 balangir
-baleshwar town
+baleshwar
 ballari
 balurghat
 bangalore
+banhatti
 bankura
 bapatla
 baramula
 barbil
+bareli
 bargarh
 barh
-baripada town
+baripada
 barmer
 barnala
 barpeta
 batala
 bathinda
+bazar
 begusarai
 belagavi
 bellampalle
 belonia
+bengal
 bengaluru
 bettiah
-bhaburban agglomeration
+bhaburban
 bhadrachalam
 bhadrak
 bhagalpur
@@ -94,34 +104,41 @@ bharatpur
 bharuch
 bhatapara
 bhavnagar
+bhawan
 bhawanipatna
+bhayandar
 bheemunipatnam
-bhilai nagar
+bhilai
 bhilwara
 bhimavaram
 bhiwandi
 bhiwani
 bhongir
 bhopal
+bhosari
 bhubaneswar
 bhuj
 bihar
 bikaner
 bilaspur
+blair
 bobbili
 bodhan
-bokaro steel city
-bongaigaon city
+bokaro
+bongaigaon
 brahmapur
 bulandshahr
+burdwan
 buxar
 byasanagar
+cantonment
+cantt
 chaibasa
 chalakudy
 chandausi
 chandigarh
 changanassery
-charkhi dadri
+charkhi
 chatra
 chennai
 cherthala
@@ -129,27 +146,38 @@ chhapra
 chhattisgarh
 chikkamagaluru
 chilakaluripet
+chinsurah
 chirala
 chirkunda
 chirmiri
 chittoor
-chittur thathamangalam
+chittur
+churu
+city
 coimbatore
+colony
+cum
 cuttack
-dadra and nagar haveli
-dalli rajhara
+dabhade
+dabwali
+dadra
+dadri
+dalli
+daltonganj
+dam
 darbhanga
 darjiling
 davanagere
 deesa
 dehradun
-dehri on sone
+dehri
 delhi
 deoghar
 dhamtari
 dhanbad
 dharmanagar
 dharmavaram
+dharwad
 dhenkanal
 dhoraji
 dhubri
@@ -158,11 +186,13 @@ dhuri
 dibrugarh
 dimapur
 diphu
+dombivali
 dumka
 dumraon
 durg
+durgapur
 eluru
-english bazar
+english
 erode
 etawah
 faridabad
@@ -170,11 +200,12 @@ faridkot
 farooqnagar
 farrukhabad
 fatehabad
-fatehpur sikri
+fatehgarh
+fatehpur
 fazilka
 firozabad
 firozpur
-firozpur cantt
+flank
 forbesganj
 gadwal
 gangarampur
@@ -192,6 +223,7 @@ gooty
 gopalganj
 gudivada
 gudur
+guduvancheri
 gujarat
 gumia
 guntakal
@@ -203,24 +235,28 @@ guwahati
 gwalior
 habra
 hajipur
-haldwani cum kathgodam
+haldwani
 hansi
 hapur
 hardoi
 hardwar
 haryana
+haveli
 hazaribag
-himachal pradesh
+himachal
 hindupur
 hisar
+hooghly
 hoshiarpur
-hubli dharwad
-hugli chinsurah
+hubli
+hugli
 hyderabad
 ichalkaranji
 imphal
 india
 indore
+islampur
+islands
 itarsi
 jabalpur
 jagdalpur
@@ -229,26 +265,26 @@ jagraon
 jagtial
 jaipur
 jalandhar
-jalandhar cantt
 jalpaiguri
 jamalpur
 jammalamadugu
 jammu
-jammu and kashmir
 jamnagar
 jamshedpur
 jamui
 jangaon
+janjgir
 jatani
 jehanabad
 jhansi
 jhargram
 jharkhand
 jharsuguda
-jhumri tilaiya
+jhumri
 jind
 jodhpur
 jorhat
+ka
 kadapa
 kadi
 kadiri
@@ -256,9 +292,10 @@ kagaznagar
 kailasahar
 kaithal
 kakinada
+kalan
 kalimpong
 kalpi
-kalyan dombivali
+kalyan
 kamareddy
 kancheepuram
 kandukur
@@ -266,6 +303,7 @@ kanhangad
 kannur
 kanpur
 kapadvanj
+kapura
 kapurthala
 karaikal
 karimganj
@@ -277,9 +315,15 @@ karnatka
 karur
 karwar
 kasaragod
+kasba
 kashipur
-kathurban agglomeration
+kashmir
+kasibugga
+kathgodam
+kathhara
+kathurban
 katihar
+katni
 kavali
 kayamkulam
 kelambakkam
@@ -290,9 +334,11 @@ keshod
 khair
 khambhat
 khammam
+khand
 khanna
 kharagpur
 kharar
+khodargama
 khowai
 kishanganj
 kochi
@@ -303,7 +349,8 @@ kolkata
 kollam
 koratla
 korba
-kot kapura
+kot
+kota
 kothagudem
 kottayam
 kovvur
@@ -321,7 +368,7 @@ lakheri
 lakhimpur
 lakhisarai
 lakshmeshwar
-lal gopalganj nindaura
+lal
 lalganj
 lalgudi
 lalitpur
@@ -350,10 +397,11 @@ machilipatnam
 madanapalle
 maddur
 madhepura
+madhopur
 madhubani
 madhugiri
 madhupur
-madhya pradesh
+madhya
 madikeri
 madurai
 magadi
@@ -369,13 +417,13 @@ mahemdabad
 mahendragarh
 mahesana
 mahidpur
-mahnar bazar
+mahnar
 mahuva
 maihar
 mainaguri
 makhdumpur
 makrana
-malaj khand
+malaj
 malappuram
 malavalli
 malda
@@ -386,6 +434,7 @@ malkapur
 malout
 malpura
 malur
+malwa
 manachanallur
 manasa
 manavadar
@@ -396,7 +445,6 @@ mandamarri
 mandapeta
 mandawa
 mandi
-mandi dabwali
 mandideep
 mandla
 mandsaur
@@ -410,6 +458,7 @@ mangalvedhe
 manglaur
 mangrol
 mangrulpir
+maniharan
 manihari
 manipur
 manjlegaon
@@ -434,20 +483,20 @@ mattannur
 mauganj
 mavelikkara
 mavoor
-mayang imphal
+mayang
 medak
-medininagar daltonganj
+medininagar
 medinipur
 meerut
 meghalaya
 mehkar
 memari
-merta city
+merta
 mhaswad
-mhow cantonment
+mhow
 mhowgaon
 mihijam
-mira bhayandar
+mira
 mirganj
 miryalaguda
 mizoram
@@ -465,7 +514,7 @@ morshi
 morvi
 motihari
 motipur
-mount abu
+mount
 mudabidri
 mudalagi
 muddebihal
@@ -484,17 +533,19 @@ munger
 murliganj
 murshidabad
 murtijapur
-murwara katni
+murwara
 musabani
 mussoorie
 muvattupuzha
 muzaffarpur
 mysore
+n
 nabadwip
 nabarangapur
 nabha
 nadbai
 nadiad
+nadu
 nagaland
 nagaon
 nagapattinam
@@ -511,7 +562,7 @@ nahan
 naharlagun
 naidupet
 naihati
-naila janjgir
+naila
 nainital
 nainpur
 najibabad
@@ -520,9 +571,9 @@ nakur
 nalbari
 namagiripettai
 namakkal
-nanded waghala
+nanded
 nandgaon
-nandivaram guduvancheri
+nandivaram
 nandura
 nandurbar
 nandyal
@@ -546,7 +597,7 @@ nasirabad
 natham
 nathdwara
 naugachhia
-naugawan sadat
+naugawan
 nautanwa
 navalgund
 navsari
@@ -555,20 +606,23 @@ nawada
 nawanshahr
 nawapur
 nedumangad
-neem ka thana
+neem
 neemuch
 nehtaur
 nelamangala
 nellikuppam
 nellore
 nepanagar
-new delhi
-neyveli ts
+new
+newra
+neyveli
 neyyattinkara
+nicobar
 nidadavole
 nilambur
 nilanga
 nimbahera
+nindaura
 nirmal
 niwai
 niwari
@@ -578,20 +632,21 @@ noida
 nokha
 nongstoin
 noorpur
-north lakhimpur
+north
 nowgong
-nowrozabad khodargama
+nowrozabad
 nuzvid
-o valley
+o
 obra
 oddanchatram
 odisha
+on
 ongole
 orai
 osmanabad
 ottappalam
 ozar
-p n patti
+p
 pachora
 pachore
 pacode
@@ -606,10 +661,10 @@ palakkad
 palampur
 palani
 palanpur
-palasa kasibugga
+palasa
 palghar
 pali
-palia kalan
+palia
 palitana
 palladam
 pallapatti
@@ -625,7 +680,7 @@ panchla
 pandharkaoda
 pandharpur
 pandhurna
-pandurban agglomeration
+pandurban
 panipat
 panna
 panniyannur
@@ -644,7 +699,7 @@ parli
 partur
 parvathipuram
 pasan
-paschim punropara
+paschim
 pasighat
 patan
 pathanamthitta
@@ -674,11 +729,13 @@ periyakulam
 periyasemur
 pernampattu
 perumbavoor
+pet
 petlad
 phagwara
 phalodi
 phaltan
 phillaur
+phul
 phulabani
 phulera
 phulpur
@@ -690,7 +747,7 @@ pilibhit
 pilkhuwa
 pindwara
 pinjore
-pipar city
+pipar
 pipariya
 piriyapatna
 piro
@@ -705,12 +762,15 @@ ponneri
 ponnur
 porbandar
 porsa
-port blair
+port
 powayan
+pradesh
 prantij
 pratapgarh
+prayagraj
 prithvipur
 proddatur
+project
 puducherry
 pudukkottai
 pudupattinam
@@ -723,11 +783,12 @@ pune
 punganur
 punjab
 punjaipugalur
+punropara
 puranpur
 puri
 purna
 purnia
-purqurban agglomerationzi
+purqurban
 purulia
 purwa
 pusad
@@ -735,11 +796,11 @@ puthuppally
 puttur
 qadian
 raayachuru
-rabkavi banhatti
+rabkavi
 radhanpur
-rae bareli
+rae
 rafiganj
-raghogarh vijaypur
+raghogarh
 raghunathganj
 raghunathpur
 rahatgarh
@@ -761,9 +822,8 @@ rajapalayam
 rajasthan
 rajauri
 rajgarh
-rajgarh alwar
-rajgarh churu
 rajgir
+rajhara
 rajkot
 rajnandgaon
 rajpipla
@@ -777,13 +837,12 @@ ramanagaram
 ramanathapuram
 ramdurg
 rameshwaram
-ramganj mandi
+ramganj
 ramgarh
 ramnagar
 ramngarh
 rampur
-rampur maniharan
-rampura phul
+rampura
 rampurhat
 ramtek
 ranaghat
@@ -794,6 +853,7 @@ rangia
 rania
 ranibennur
 ranipet
+rao
 rapar
 rasipuram
 rasra
@@ -807,7 +867,7 @@ raurkela
 raver
 rawatbhata
 rawatsar
-raxaul bazar
+raxaul
 rayachoti
 rayadurg
 rayagada
@@ -820,10 +880,12 @@ repalle
 revelganj
 rewa
 rewari
+right
 rishikesh
 risod
+road
 robertsganj
-robertson pet
+robertson
 rohtak
 ron
 roorkee
@@ -835,6 +897,7 @@ sabalgarh
 sadabad
 sadalagi
 sadasivpet
+sadat
 sadri
 sadulpur
 sadulshahar
@@ -848,6 +911,7 @@ saharsa
 sahaspur
 sahaswan
 sahawar
+sahib
 sahibganj
 sahjanwa
 saidpur
@@ -898,19 +962,18 @@ satna
 sattenapalle
 sattur
 saunda
-saundatti yellamma
+saundatti
 sausar
 savanur
 savarkundla
 savner
-sawai madhopur
+sawai
 sawantwadi
 sedam
 sehore
 sendhwa
 seohara
 seoni
-seoni malwa
 shahabad
 shahade
 shahbad
@@ -939,7 +1002,7 @@ shikohabad
 shillong
 shimla
 shirdi
-shirpur warwade
+shirpur
 shirur
 shishgarh
 shivamogga
@@ -960,9 +1023,10 @@ sidlaghatta
 sihor
 sihora
 sikanderpur
-sikandra rao
+sikandra
 sikandrabad
 sikar
+sikri
 silao
 silapathar
 silchar
@@ -977,7 +1041,7 @@ singrauli
 sinnar
 sira
 sircilla
-sirhind fatehgarh sahib
+sirhind
 sirkali
 sirohi
 sironj
@@ -999,6 +1063,7 @@ sojat
 solan
 solapur
 sonamukhi
+sone
 sonepur
 songadh
 sonipat
@@ -1006,14 +1071,15 @@ sopore
 soro
 soron
 soyagaon
-sri madhopur
+sri
 srikakulam
 srikalahasti
 srinagar
 srinivaspur
 srirampore
-srisailam project right flank colony township
+srisailam
 srivilliputhur
+steel
 sugauli
 sujangarh
 sujanpur
@@ -1030,7 +1096,7 @@ surandai
 surapura
 surat
 suratgarh
-surban agglomerationr
+surban
 suri
 suriyampalayam
 suryapet
@@ -1040,35 +1106,36 @@ takhatgarh
 taki
 talaja
 talcher
-talegaon dabhade
+talegaon
 talikota
 taliparamba
 talode
 talwara
-tamil nadu
+tamil
 tamluk
 tanda
 tandur
 tanuku
 tarakeswar
+taran
 tarana
 taranagar
 taraori
 tarbha
 tarikere
-tarn taran
+tarn
 tasgaon
 tehri
 tekkalakote
 telangana
 tenali
 tenkasi
-tenu dam cum kathhara
+tenu
 terdal
 tezpur
 thakurdwara
 thammampatti
-thana bhawan
+thana
 thane
 thanesar
 thangadh
@@ -1076,7 +1143,8 @@ thanjavur
 tharad
 tharamangalam
 tharangambadi
-theni allinagaram
+thathamangalam
+theni
 thirumangalam
 thirupuvanam
 thiruthuraipoondi
@@ -1089,7 +1157,8 @@ thoubal
 thrissur
 thuraiyur
 tikamgarh
-tilda newra
+tilaiya
+tilda
 tilhar
 tindivanam
 tinsukia
@@ -1116,7 +1185,10 @@ todabhim
 todaraisingh
 tohana
 tonk
+town
+township
 tripura
+ts
 tuensang
 tuljapur
 tulsipur
@@ -1147,23 +1219,23 @@ unnamalaikadai
 unnao
 upleta
 uran
-uran islampur
 uravakonda
-urmar tanda
+urmar
 usilampatti
 uthamapalayam
 uthiramerur
 utraula
-uttar pradesh
+uttar
 uttarakhand
 vadakkuvalliyur
 vadalur
-vadgaon kasba
+vadgaon
 vadipatti
 vadnagar
 vadodara
 vaijapur
 vaikom
+valley
 valparai
 valsad
 vandavasi
@@ -1171,7 +1243,7 @@ vaniyambadi
 vapi
 varanasi
 varkala
-vasai virar
+vasai
 vatakara
 vedaranyam
 vellakoil
@@ -1189,6 +1261,7 @@ vikramasingapuram
 viluppuram
 vinukonda
 viramgam
+virar
 virudhachalam
 virudhunagar
 visakhapatnam
@@ -1198,28 +1271,31 @@ vita
 vizianagaram
 vrindavan
 vyara
-wadgaon road
+wadgaon
 wadhwan
 wadi
+waghala
 wai
 wanaparthy
 wani
 wankaner
-wara seoni
+wara
 warangal
 wardha
 warhapur
 warisaliganj
 warora
 warud
+warwade
 washim
-west bengal
+west
 wokha
 yadgir
 yamunanagar
 yanam
 yavatmal
 yawal
+yellamma
 yellandu
 yemmiganur
 yerraguntla
@@ -1229,9 +1305,3 @@ zamania
 zira
 zirakpur
 zunheboto
-kota
-prayagraj
-bhosari
-burdwan
-durgapur
-hooghly
