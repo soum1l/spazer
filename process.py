@@ -77,7 +77,7 @@ for x in range(10):
         #Mark chunks (and its siblings) containing Indian addresses
         import re
         from bisect import bisect_left as bisect
-        wc_thres = 70
+        wc_thres = 60
         for tag in soup.find_all():
             for chunk in tag.find_all(string=True, recursive=False):
                 chunk = re.sub('[^A-Za-z0-9]+', ' ', chunk).lower().split()

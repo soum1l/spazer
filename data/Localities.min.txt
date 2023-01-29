@@ -103,6 +103,7 @@ bhiwandi
 bhiwani
 bhongir
 bhopal
+bhosari
 bhubaneswar
 bhuj
 bihar
@@ -114,6 +115,7 @@ bokaro steel city
 bongaigaon city
 brahmapur
 bulandshahr
+burdwan
 buxar
 byasanagar
 chaibasa
@@ -161,6 +163,7 @@ diphu
 dumka
 dumraon
 durg
+durgapur
 eluru
 english bazar
 erode
@@ -213,6 +216,7 @@ hazaribag
 himachal pradesh
 hindupur
 hisar
+hooghly
 hoshiarpur
 hubli dharwad
 hugli chinsurah
@@ -304,6 +308,7 @@ kollam
 koratla
 korba
 kot kapura
+kota
 kothagudem
 kottayam
 kovvur
@@ -709,6 +714,7 @@ port blair
 powayan
 prantij
 pratapgarh
+prayagraj
 prithvipur
 proddatur
 puducherry
@@ -1229,9 +1235,3 @@ zamania
 zira
 zirakpur
 zunheboto
-kota
-prayagraj
-bhosari
-burdwan
-durgapur
-hooghly
