@@ -1229,3 +1229,9 @@ zamania
 zira
 zirakpur
 zunheboto
+kota
+prayagraj
+bhosari
+burdwan
+durgapur
+hooghly
