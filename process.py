@@ -35,7 +35,14 @@ for x in range(10):
         fa.close()
 
         #Remove Non-Textual HTML tags
+        import re
         for tag in soup.find_all(name=useless_tags):
+            if tag.name == 'a':
+                try:
+                    if re.match('.+@.+\..+', tag['href']):
+                        continue
+                except Exception: pass
+
             _ = tag.extract()
 
         #Remove html comments
@@ -66,7 +73,7 @@ for x in range(10):
         ### Token is a valid address/e-mail/telephone-number #############
 
     	#Load database of Indian Cities and Villages
-        fb = open('data/Localities.min.txt', 'r', errors="ignore")
+        fb = open('data/Localities.med.txt', 'r', errors="ignore")
         localities = fb.read().strip().split('\n')
         fb.close()
 
@@ -75,7 +82,6 @@ for x in range(10):
             tag['class'] = None
 
         #Mark chunks (and its siblings) containing Indian addresses
-        import re
         from bisect import bisect_left as bisect
         wc_thres = 60
         for tag in soup.find_all():
@@ -118,10 +124,9 @@ for x in range(10):
 
         ### Editing resultant string [POSTPROCESSING] ####################
 
-        #Strip spaces and remove excessive newlines
+        #Strip spaces and remove excessive newlines/tabs/spaces
         output = soup.get_text().strip()
-        output = re.sub('\s{2,}', ' ', output)
-        output = re.sub('[\n\t]?', '', output)
+        output = re.sub('[\n\s\t]{2,}', ' ',  output)
         #Your code ends  #################################
 
         #Write the output variable contents to output/ folder.
