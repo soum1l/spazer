@@ -42,7 +42,6 @@ for x in range(10):
                     if re.match('.+@.+\..+', tag['href']):
                         continue
                 except Exception: pass
-
             _ = tag.extract()
 
         #Remove html comments
